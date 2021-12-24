@@ -66,6 +66,24 @@ button:hover {
 Task: 
 - Write the CSS required to launch Santa and his sleigh. Check out this cool animation generator: https://animista.net/play/exits/ */
 
+.countdown {
+  z-index: 1;
+  color: var(--wine-red);
+  font-size: 80px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+.ho-ho-ho {
+  z-index: 1;
+  color: var(--wine-red);
+  font-size: 50px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
 .launch {
   animation: slide-out-top 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
