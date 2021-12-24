@@ -2,6 +2,11 @@ const crew = document.getElementById("crew");
 const btn = document.getElementById("btn");
 const countdownEl = document.querySelector("#countdown");
 
+function play() {
+  let audio = new Audio("merrySound.mp3");
+  audio.play();
+}
+
 function launch() {
   crew.classList.add("launch");
 }
@@ -12,6 +17,7 @@ function countingdown() {
     if (count === 0) {
       clearInterval(countdown);
       countdownEl.innerHTML = `<p class="ho-ho-ho">HO! HO! HO!</p>`;
+      play();
       launch();
     } else {
       countdownEl.innerHTML = `<p class="countdown">${count}</p>`;
